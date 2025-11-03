@@ -1,206 +1,174 @@
-/* --- Global Styles --- */
-* {
-  box-sizing: border-box;
-}
-
 body {
-  margin: 0;
-  padding: 0;
-  background-image: url("humber-background.png.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  background-size: 400px;
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  color: #222;
+    margin: 0%;
+    padding: 0%;
+    background-image: url(humber-background.png.jpg);
+    background-repeat: no-repeat;
+    background-position: right 70px top 50px;
+    background-size: 400px;   
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-/* --- Header & Navbar --- */
-header {
-  padding: 20px;
+#about-section {
+  scroll-margin-top: 100px;
+  text-align: center;
+}
+
+#about-section2 {
+  scroll-margin-top: 100px;
+}
+
+.about-box {
+  background-color: #f8f9fa;  /* soft light background */
+  border: 2px solid #ccc;     /* light grey border */
+  border-radius: 10px;
+  padding: 40px;
+  width: 50%;
+  width: 200px auto;        /* centers the box */
+  text-align: center;         /* centers text inside */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);  /* subtle shadow */
+}
+
+.about {
+  text-align: center;
+  margin-top: 400px;
+  margin-bottom: 30%;
+  color: brown;
+}
+.p1 {
+  text-align: center;
 }
 
 .navbar {
-  display: flex;
-  justify-content: flex-end;
-  gap: 30px;
-  margin-right: 30px;
-}
-
-.navbar a {
-  text-decoration: none;
-  color: darkblue;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
-
-.navbar a:hover {
-  color: brown;
+    display: flex;
+    justify-content: right;
+    gap: 40px;
+    margin-right: 30px;
+    z-index: 1000;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    
 }
 
 .main {
-  margin: 10px;
-  color: darkblue;
-}
+    margin: 0%;
+    padding: 0%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    padding-bottom: 100px;
+    color: darkblue;
 
-/* --- Intro Section --- */
-.intro-section {
-  padding: 20px;
-  text-align: left;
 }
 
 .intro {
-  color: lightslategray;
-  margin-bottom: 10px;
+    margin-top: 100px;
+    margin-bottom: 0%;
+    margin-left: 10px;
+    color: lightslategray;
+    
 }
 
 .student {
-  color: burlywood;
-  margin-bottom: 20px;
+    margin-left: 10px;
+    color: burlywood;
 }
 
+p {
+    margin-left: 10px;
+}
 .link-box {
-  display: inline-block;
-  background-color: lightslategray;
-  color: black;
-  text-decoration: none;
-  padding: 12px 18px;
-  border-radius: 8px;
-  margin: 10px 10px 0 0;
-  transition: 0.3s;
+    display: inline-block;
+    background-color: lightslategray;
+    color: black;
+    text-decoration: none;
+    margin-right: 100px;
+    padding: 12px 12px;
+    margin-left: 20px;
+
+    
 }
 
-.link-box:hover {
-  background-color: #444;
-  color: white;
+nav a {
+    text-decoration: none;
+    color: darkblue;
+    font-weight: bold;
+    
+
 }
 
-/* --- About Section --- */
-.status {
-  text-align: center;
-  margin-top: 80px;
-  color: darkblue;
-}
-
-.about-me p {
-  margin: 10px 20px;
-  text-align: justify;
-}
-
-/* --- Info Box --- */
 .info-box {
-  background-color: rgb(139, 0, 79);
-  padding: 40px 20px;
+  background-color: rgb(139, 0, 79); /* Dark pink/maroon */
+  padding: 40px;
   text-align: center;
-  border-radius: 15px;
-  width: 80%;
-  margin: 80px auto;
-  color: white;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  width: 70%;              /* ✅ make it smaller or bigger here */
+  margin: 100px auto;      /* centers it and adds space */
+  color: white;            /* text color inside */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2); /* optional */
+  margin-top: 100px;
 }
 
-.info-box h1,
-.info-box h2 {
+.info-box h1 {
   margin-bottom: 10px;
+  color: white;              /* Humber blue */
 }
 
+.info-box a {
+  color: white;
+  text-decoration: none;
+}
+
+.info-box a:hover {
+  text-decoration: underline;
+}
 .info-box p {
-  font-size: 18px;
+    color: white;
+    font-size: 25px;
+}
+
+.status {
+  margin-top: 400px;
+  margin-bottom: 70px;
+  text-align: center;
 }
 
 .social-links {
+  text-align: center;
   margin-top: 20px;
 }
 
 .social-links a {
-  text-decoration: none;
-  color: white;
-  margin: 0 15px;
-  font-size: 40px;
+    text-decoration: none;
+    color: #333; 
+    margin: 0 30px;
+    font-size: 50px;
+  margin: 0 10px;
   transition: 0.3s ease;
 }
 
 .social-links a:hover {
-  color: lightslategray;
-  transform: scale(1.2);
-}
-
-/* --- Footer --- */
-footer {
-  text-align: center;
-  padding: 20px;
-  background: #f0f0f0;
-  color: #333;
-  margin-top: 50px;
-}
-
-/* --- Responsive Design --- */
-@media (max-width: 768px) {
+    color: lightslategray;
+  transform: scale(1.2);   
+} 
+@media [max-width: 768px] {
   body {
     background-size: 250px;
   }
 
-  .navbar {
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 10px;
-    margin-right: 10px;
-  }
-
-  .main {
-    font-size: 1rem;
+  @media [max-width: 480px] {
+    .intro {
+      font-side: 1.2rem;
+    }
+footer {
     text-align: center;
-  }
-
-  .intro {
-    font-size: 1.4rem;
-    text-align: center;
-  }
-
-  .student {
-    text-align: center;
-  }
-
-  .link-box {
-    display: block;
-    margin: 10px auto;
-    text-align: center;
-  }
-
-  .info-box {
-    width: 90%;
-    padding: 20px;
-  }
-
-  .info-box p {
-    font-size: 16px;
-  }
-
-  .social-links a {
-    font-size: 35px;
-  }
 }
-
-@media (max-width: 480px) {
-  .intro {
-    font-size: 1.2rem;
-  }
-
-  .student {
-    font-size: 1rem;
-  }
-
-  .info-box {
-    padding: 15px;
-  }
-
-  .info-box h1,
-  .info-box h2 {
-    font-size: 1.2rem;
-  }
+/* .student {
+    margin: 0%;
 }
+.comment {
+    margin: 0%;
+} */
