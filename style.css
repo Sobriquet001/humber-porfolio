@@ -4,11 +4,8 @@ body {
     background-image: url(humber-background.png.jpg);
     background-repeat: no-repeat;
     background-position: right 70px top 50px;
-    background-size: 400px;
-    
-    
+    background-size: 400px;   
 }
-
 
 html {
   scroll-behavior: smooth;
@@ -167,6 +164,7 @@ footer {
 .comment {
     margin: 0%;
 } */
+
 
 
 
