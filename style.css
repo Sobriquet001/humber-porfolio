@@ -81,13 +81,14 @@ p {
     margin-left: 10px;
 }
 .link-box {
-    display: inline-block;
+    display: block;
     background-color: lightslategray;
     color: black;
     text-decoration: none;
-    margin-right: 100px;
+    margin: 10px auto;
+    /* margin-right: 100px; */
     padding: 12px 12px;
-    margin-left: 20px;
+    /* margin-left: 20px; */
 
     
 }
@@ -172,3 +173,4 @@ footer {
 .comment {
     margin: 0%;
 } */
+
